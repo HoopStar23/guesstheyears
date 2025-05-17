@@ -1,0 +1,91 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  align-items: center;
+  height: 90vh;
+}
+
+.contenedor__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.titulo-estilo {
+  font-size: 64px;
+}
+
+.eventos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 100%;
+  place-items: center;
+}
+
+.eventos__card {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #fcd52d;
+}
+
+.eventos__card img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.evento__titulo {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .eventos {
+    gap: 1rem;
+    height: 100%;
+  }
+  .eventos__card {
+    width: 300px;
+    height: 350px;
+  }
+
+  .contenedor__header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 50px;
+  }
+
+  .titulo-estilo {
+    padding-top: 50px;
+    margin-bottom: 0px;
+    font-size: 64px;
+  }
+
+  .scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+  }
+}
+
+@media (max-width: 576px) {
+    .contenedor{
+        padding: 0;
+    }
+  .eventos__card {
+    width: 210px;
+    height: 260px;
+  }
+}

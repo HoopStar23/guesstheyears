@@ -1,5 +1,5 @@
-body {
-  border: 10px solid red;
+body{
+  background-color:azure;
 }
 
 .contenedor {
@@ -30,32 +30,53 @@ body {
 }
 
 .titulo-estilo {
-    font-size: 64px;
+  font-size: 64px;
 }
 
-.footer{
+.footer {
+  width: 40%;
+  padding-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.download-buttons {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fca12d;
+  border-radius: 100px;
+}
+
+.download-buttons__text {
+  float: left;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+svg {
+  padding-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
     width: 100%;
-    display: flex;
-    background-color: #ff7c2c;
-    justify-content: space-around;
-}
-
-.download-buttons{
-    width: 150px;
-    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    background-color: #FCA12D;
-    border-radius: 100px;
+    gap: 2rem;
+    padding-bottom: 1rem;
+  }
 }
 
-.download-buttons__text{
-    float: left;
-    font-weight: bold;
-    margin-left: 5px;
-}
-
-svg{
-    padding-right: 5px;
+@media (max-width: 576px) {
+  .contenedor__header--button {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 1rem;
+  }
 }
