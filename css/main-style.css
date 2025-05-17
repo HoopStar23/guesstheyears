@@ -17,6 +17,7 @@ body{
 }
 
 .contenedor__header--button {
+  padding-top: 50px;
   display: flex;
   justify-content: space-around;
 }
