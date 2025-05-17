@@ -1,0 +1,61 @@
+body {
+  border: 10px solid red;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 98vh;
+}
+
+.contenedor__header {
+  text-align: center;
+  padding: 2rem;
+  width: 80%;
+}
+
+.contenedor__header--button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.boton_estilo {
+  background-color: #ff7c2c;
+  padding: 1rem;
+  color: rgb(0, 0, 0);
+  width: 160px;
+  border-radius: 20px;
+}
+
+.titulo-estilo {
+    font-size: 64px;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    background-color: #ff7c2c;
+    justify-content: space-around;
+}
+
+.download-buttons{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #FCA12D;
+    border-radius: 100px;
+}
+
+.download-buttons__text{
+    float: left;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+svg{
+    padding-right: 5px;
+}
