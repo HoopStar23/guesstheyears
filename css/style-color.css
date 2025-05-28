@@ -4,6 +4,7 @@
     --color-button-hover-background: #2B3241;
     --color-btn-donate: #325196;
     --color-btn-donate-hover: #2B3241;
+    --color-card-background: #EAA400;
 }
 
 .mainTextColor{
@@ -29,4 +30,8 @@
 .btn-secondary:hover{
     background-color: var(--color-btn-donate-hover);
     border-color: var(--color-btn-donate-hover);
+}
+
+.eventos__card{
+    background-color: var(--color-card-background);
 }
