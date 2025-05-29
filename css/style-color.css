@@ -1,37 +1,54 @@
-:root{
-    --color-text:#141414;
-    --color-button-background: #0049EB;
-    --color-button-hover-background: #2B3241;
-    --color-btn-donate: #325196;
-    --color-btn-donate-hover: #2B3241;
-    --color-card-background: #EAA400;
+:root {
+  --color-text: #141414;
+  --color-button-foreground: #0049eb;
+  --color-button-background: #2b3241;
+  --color-btn-donate: #325196;
+  --color-btn-donate-hover: #2b3241;
+  --color-card-background: #eaa400;
+  --_bg: #2b3241;
+  --_fg: #0049eb;
 }
 
-.mainTextColor{
-    color: var(--color-text);
+.mainTextColor {
+  color: var(--color-text);
 }
 
-.btn-primary{
-    background-color: var(--color-button-background);
-    border-color: var(--color-button-background);
-    color: var(--bs-white);
+.btn-primary {
+  background-color: var(--color-button-background);
+  border-color: var(--color-button-background);
+  color: var(--bs-white);
 }
 
-.btn-primary:hover{
-    background-color: var(--color-button-hover-background);
-    border-color: var(--color-button-hover-background);
+.btn-primary:hover {
+  background-color: var(--color-button-hover-background);
+  border-color: var(--color-button-hover-background);
 }
 
-.btn-secondary{
-    background-color: var(--color-btn-donate);
-    border-color: var(--color-btn-donate);
+.btn-secondary {
+  background-color: var(--color-btn-donate);
+  border-color: var(--color-btn-donate);
 }
 
-.btn-secondary:hover{
-    background-color: var(--color-btn-donate-hover);
-    border-color: var(--color-btn-donate-hover);
+.btn-secondary:hover {
+  background-color: var(--color-btn-donate-hover);
+  border-color: var(--color-btn-donate-hover);
 }
 
-.eventos__card{
-    background-color: var(--color-card-background);
+.eventos__card {
+  background-color: var(--color-card-background);
+}
+
+.myBtn {
+  color: #000;
+  background-color: var(--color-button-background);
+
+  &::after {
+    color: white;
+    background-color: var(--color-button-foreground);
+    border: 2px solid var(--color-button-background);
+  }
+
+  &:focus-visible {
+    outline-color: #000;
+  }
 }
