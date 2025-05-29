@@ -15,7 +15,11 @@ body{
 }
 
 .contenedor__header--button{
-    padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
 .ultima__puntuacion {
@@ -37,7 +41,7 @@ body{
 
 .footer {
   width: 40%;
-  padding-top: 10rem;
+  padding-top: 25rem;
   display: flex;
   justify-content: space-around;
 }

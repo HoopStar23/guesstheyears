@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  isolation: isolate;
+}
+
+a{
+  text-decoration: none;
+}
+
+.myBtn {
+  --_y: -4px;
+  line-height: 1.5;
+  border-radius: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid transparent;
+  outline-offset:  2px;
+  
+  &::after{
+    content: attr(aria-label);
+    font-size: 1.1rem;
+    padding: 12px 48px;
+    border-radius: inherit;
+    transform: translateY(var(--_y));
+    transition: 200ms ease-out;
+  }
+
+  &:hover{
+    --_y: -8px;
+  }
+
+  &:active{
+    --_y: 1px;
+    &::after{
+      transition: 50ms ease-out;
+    }
+  }
+}
