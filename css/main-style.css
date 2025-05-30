@@ -15,7 +15,8 @@ body {
 
 .contenedor__header {
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
+  margin-bottom: 10rem;
   width: 80%;
 }
 
@@ -30,44 +31,87 @@ body {
 }
 
 .footer {
-  width: 40%;
-  padding-top: 15rem;
+  width: 70%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
-.download-buttons {
-  width: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fca12d;
-  border-radius: 100px;
+.logo {
+  height: 250px;
+  transform: translateY(-0px);
 }
 
-.download-buttons__text {
-  float: left;
-  font-weight: bold;
-  margin-left: 5px;
+.donate-icon {
+  margin: 0 0.5rem;
+  font-size: 2rem;
 }
 
-.logo{
-  height: 240px;
-  transform: translateY(-40px);
+.social-icon {
+  margin: 0 0.5rem;
+  font-size: 2rem;
+}
+
+.icon-container .fab,
+.icon-container .fas {
+  line-height: 60px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.icon-container .fab:hover,
+.icon-container .fas:hover {
+  transform: translateY(-10%);
+  color: white;
+}
+
+.icon-container .fa-paypal:hover {
+  background-color: #2790c3;
+}
+
+.icon-container .fa-stripe:hover {
+  background-color: #5167fc;
+}
+
+.icon-container .fa-coffee:hover {
+  background-color: #ffee00;
+  color: black;
+}
+
+.icon-container .fa-twitter:hover {
+  background-color: #0077b5;
+}
+
+.icon-container .fa-instagram:hover {
+  background-color: #c13584;
+}
+
+.icon-container .fa-facebook:hover {
+  background-color: #3b5998;
 }
 
 @media (max-width: 768px) {
   .footer {
-    flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding-bottom: 1rem;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 620px) {
+  .logo {
+    position: absolute;
+    height: 100px;
+    left: 0px;
+    top: 50px;
+  }
   .contenedor__header--button {
     width: 100%;
     flex-direction: column;
@@ -77,7 +121,18 @@ body {
     padding-bottom: 1rem;
   }
 
-  .footer {
-    padding-top: 1rem;
+  .donate-icon {
+    font-size: 1.4rem;
+  }
+
+  .social-icon {
+    font-size: 1.4rem;
+  }
+
+  .icon-container .fab,
+  .icon-container .fas {
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
   }
 }
