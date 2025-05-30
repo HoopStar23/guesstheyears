@@ -1,0 +1,304 @@
+:root {
+  --primary-color: #2b3241;
+  --secondary-color: #0049eb;
+  --accent-color: #eaa400;
+  --dark-color: #2b3241;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../image/bg/parchment-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.header-bg {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 0;
+  border-bottom: 3px solid var(--secondary-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  color: white;
+  text-shadow: 0 0 10px rgba(219, 166, 52, 0.7);
+  margin-bottom: 0;
+}
+
+.leaderboard-container {
+  max-width: 900px;
+  margin: 20px auto 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  height: calc(100vh - 250px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Ensures the border doesn't overflow rounded corners */
+}
+
+.leaderboard-header {
+  background: var(--dark-color);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.leaderboard-entries {
+  overflow-y: auto;
+  flex: 1;
+  padding: 5px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.leaderboard-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.leaderboard-card:hover {
+  transform: translateY(-3px);
+  background: rgba(153, 170, 187, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.rank-badge {
+  position: absolute;
+  top: 22px;
+  left: 30px;
+  width: 22px;
+  height: 22px;
+  background: var(--accent-color);
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(231, 76, 60, 0.5);
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.player-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-color);
+}
+
+.player-name {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.player-score {
+  font-family: "Noto Sans JP", sans-serif;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.medal {
+  font-size: 1.8rem;
+  margin-right: 8px;
+}
+
+.gold {
+  color: gold;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.silver {
+  color: silver;
+  text-shadow: 0 0 10px rgba(192, 192, 192, 0.5);
+}
+
+.bronze {
+  color: #cd7f32;
+  text-shadow: 0 0 10px rgba(205, 127, 50, 0.5);
+}
+
+.time-ago {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #bdc3c7;
+  font-size: 0.85rem;
+}
+
+.back-btn {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  position: fixed;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.back-btn:hover {
+  background: var(--secondary-color);
+  transform: translate(-50%, -3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 12px 0;
+}
+
+.donate-icon,
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.donate-icon:hover,
+.social-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.fa-paypal {
+  color: #003087;
+}
+.fa-stripe {
+  color: #6772e5;
+}
+.fa-coffee {
+  color: #6f4e37;
+}
+.fa-twitter {
+  color: #1da1f2;
+}
+.fa-instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+  color: white;
+}
+.fa-facebook {
+  color: #1877f2;
+}
+
+/* Scrollbar styling */
+.leaderboard-entries::-webkit-scrollbar {
+  width: 8px;
+}
+
+.leaderboard-entries::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.leaderboard-entries::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.overlay-borde {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .leaderboard-container {
+    padding: 15px;
+    height: calc(100vh - 220px);
+  }
+
+  .player-score {
+    font-size: 1.3rem;
+  }
+}

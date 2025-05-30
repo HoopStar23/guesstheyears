@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard - Guess The Event</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/leaderboard-style.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+  </head>
+  <body>
+    <header class="header-bg">
+      <div class="container">
+        <div class="logo-container">
+          <img
+            src="../image/bg/GTE-Logo.png"
+            alt="Guess The Event Logo"
+            class="logo"
+          />
+          <h1 class="page-title bree-serif-regular">GUESS THE EVENT</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+        
+      <div class="text-center mb-4">
+        <h2 class="bree-serif-regular fs-2">LEADERBOARD</h2>
+        <p class="mb-0">Top players from around the world</p>
+      </div>
+
+      <div class="leaderboard-container">
+        <img
+              class="overlay-borde"
+              src="../image/bg/card-edge.png"
+              alt="Border para la carta"
+            />
+        <div class="leaderboard-header text-center">
+          <div class="row align-items-center">
+            <div class="col-md-5">
+              <h3 class="bree-serif-regular mb-0 text-white">Player</h3>
+            </div>
+            <div class="col-md-3">
+              <h3 class="bree-serif-regular mb-0 text-white">Score</h3>
+            </div>
+            <div class="col-md-4">
+              <h3 class="bree-serif-regular mb-0 text-white">Date</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="leaderboard-entries">
+          <!-- Top Players -->
+          <div class="leaderboard-card">
+            <div class="rank-badge">1</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/32.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">HistoryMaster</div>
+                      <div class="time-ago">2 hours ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score gold">
+                    <i class="fas fa-medal medal gold"></i> 9,850
+                  </div>
+                </div>
+                <div class="col-md-4 noto-sans-jp-font fs-6">
+                  <div>May 28, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">2</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/44.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">TimeTraveler</div>
+                      <div class="time-ago">1 day ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score silver">
+                    <i class="fas fa-medal medal silver"></i> 9,420
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div>May 25, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">3</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/22.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">ChronoExpert</div>
+                      <div class="time-ago">3 days ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score bronze">
+                    <i class="fas fa-medal medal bronze"></i> 9,150
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div>May 20, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Players (20 more for scroll demonstration) -->
+          <div class="leaderboard-card">
+            <div class="rank-badge">4</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/68.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">PastSeeker</div>
+                      <div class="time-ago">4 days ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">8,950</div>
+                </div>
+                <div class="col-md-4">
+                  <div>May 18, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">5</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/41.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">EventDetective</div>
+                      <div class="time-ago">1 week ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">8,720</div>
+                </div>
+                <div class="col-md-4">
+                  <div>May 15, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- More players... (20 total) -->
+          <div class="leaderboard-card">
+            <div class="rank-badge">6</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/12.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">TimeExplorer</div>
+                      <div class="time-ago">1 week ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">8,450</div>
+                </div>
+                <div class="col-md-4">
+                  <div>May 12, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">7</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/55.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">HistoryBuff</div>
+                      <div class="time-ago">2 weeks ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">8,210</div>
+                </div>
+                <div class="col-md-4">
+                  <div>May 8, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">8</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/33.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">DecadeDiver</div>
+                      <div class="time-ago">2 weeks ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">8,050</div>
+                </div>
+                <div class="col-md-4">
+                  <div>May 5, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">9</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/29.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">CenturySleuth</div>
+                      <div class="time-ago">3 weeks ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">7,890</div>
+                </div>
+                <div class="col-md-4">
+                  <div>Apr 28, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">10</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/51.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">EpochExpert</div>
+                      <div class="time-ago">3 weeks ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">7,650</div>
+                </div>
+                <div class="col-md-4">
+                  <div>Apr 25, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">11</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/47.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">PastPro</div>
+                      <div class="time-ago">1 month ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">7,420</div>
+                </div>
+                <div class="col-md-4">
+                  <div>Apr 20, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">12</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/62.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">HistoryHound</div>
+                      <div class="time-ago">1 month ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">7,250</div>
+                </div>
+                <div class="col-md-4">
+                  <div>Apr 15, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">13</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/38.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">EventEnthusiast</div>
+                      <div class="time-ago">1 month ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">7,100</div>
+                </div>
+                <div class="col-md-4">
+                  <div>Apr 10, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">14</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/29.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">TimeTracker</div>
+                      <div class="time-ago">1 month ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">6,950</div>
+                </div>
+                <div class="col-md-4">
+                  <div>Apr 5, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">15</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/19.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">ChronologyChamp</div>
+                      <div class="time-ago">2 months ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">6,780</div>
+                </div>
+                <div class="col-md-4">
+                  <div>Mar 28, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">16</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/75.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">EraExpert</div>
+                      <div class="time-ago">2 months ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">6,620</div>
+                </div>
+                <div class="col-md-4">
+                  <div>Mar 20, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">17</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/51.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">TimeTravelPro</div>
+                      <div class="time-ago">2 months ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">6,450</div>
+                </div>
+                <div class="col-md-4">
+                  <div>Mar 15, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">18</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/18.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">HistoryHero</div>
+                      <div class="time-ago">3 months ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">6,280</div>
+                </div>
+                <div class="col-md-4">
+                  <div>Mar 10, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">19</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/63.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">EventMaster</div>
+                      <div class="time-ago">3 months ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">6,150</div>
+                </div>
+                <div class="col-md-4">
+                  <div>Mar 5, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card">
+            <div class="rank-badge">20</div>
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="player-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/22.jpg"
+                      alt="Player"
+                      class="player-avatar"
+                    />
+                    <div>
+                      <div class="player-name">PastPioneer</div>
+                      <div class="time-ago">3 months ago</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="player-score">6,000</div>
+                </div>
+                <div class="col-md-4">
+                  <div>Feb 28, 2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn back-btn">
+        <a href="../index.html">
+          <i class="fas fa-arrow-left"></i> Back to Game
+        </a>
+      </button>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h4 class="bree-serif-regular text-white">Donate:</h4>
+            <div class="icon-container">
+              <a href="#"><i class="fab fa-paypal donate-icon"></i></a>
+              <a href="#"><i class="fab fa-stripe donate-icon"></i></a>
+              <a href="#"><i class="fas fa-coffee donate-icon"></i></a>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <h4 class="bree-serif-regular text-white">Social Media:</h4>
+            <div class="icon-container">
+              <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+              <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+              <a href="#"><i class="fab fa-facebook social-icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3 text-white">
+          <p class="noto-sans-jp-normal fs-5">&copy; 2025 Guess The Event. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      
+    </script>
+  </body>
+</html>
