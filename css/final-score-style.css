@@ -1,4 +1,4 @@
-body{
+body {
   background-image: url("../image/bg/parchment-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body{
   height: 100vh;
 }
 
-.contenedor__header--button{
+.contenedor__header--button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,9 +24,11 @@ body{
 
 .ultima__puntuacion {
   background-color: #fca12d;
+  width: 26%;
   padding: 1rem;
   border-radius: 20px;
   box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.5);
+  margin-left: 6rem;
 }
 
 .boton__estilo {
@@ -40,33 +42,69 @@ body{
 }
 
 .footer {
-  width: 40%;
-  padding-top: 25rem;
+  width: 70%;
+  padding-top: 20rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
-.download-buttons {
-  width: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fca12d;
-  border-radius: 100px;
+.donate-icon {
+  margin: 0 0.5rem;
+  font-size: 2rem;
 }
 
-.download-buttons__text {
-  float: left;
-  font-weight: bold;
-  margin-left: 5px;
+.social-icon {
+  margin: 0 0.5rem;
+  font-size: 2rem;
 }
 
-svg {
-  padding-right: 5px;
+.icon-container .fab,
+.icon-container .fas {
+  line-height: 60px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
 }
 
-.redessociales{
-    font-size: 16px;
+.icon-container .fab:hover,
+.icon-container .fas:hover {
+  transform: translateY(-10%);
+  color: white;
+}
+
+.icon-container .fa-paypal:hover {
+  background-color: #2790c3;
+}
+
+.icon-container .fa-stripe:hover {
+  background-color: #5167fc;
+}
+
+.icon-container .fa-coffee:hover {
+  background-color: #ffee00;
+  color: black;
+}
+
+.icon-container .fa-twitter:hover {
+  background-color: #0077b5;
+}
+
+.icon-container .fa-instagram:hover {
+  background-color: #c13584;
+}
+
+.icon-container .fa-facebook:hover {
+  background-color: #3b5998;
+}
+
+.info-score {
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -75,7 +113,11 @@ svg {
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .info-score {
+    padding-top: 60px;
   }
 }
