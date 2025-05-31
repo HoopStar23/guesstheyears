@@ -3,6 +3,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .contenedor {
@@ -11,7 +13,6 @@ body {
   justify-content: center;
   padding: 2rem;
   align-items: center;
-  height: 100vh;
 }
 
 .contenedor__header--button {
@@ -42,11 +43,12 @@ body {
 }
 
 .footer {
-  width: 70%;
-  padding-top: 20rem;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   text-align: center;
+  padding-top: 370px;
 }
 
 .donate-icon {
@@ -114,7 +116,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 230px;
   }
 
   .info-score {
