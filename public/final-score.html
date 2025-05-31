@@ -19,38 +19,25 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/fonts.css" />
-    <link rel="stylesheet" href="../css/final-score-style.css" />
-    <link rel="stylesheet" href="../css/style-color.css" />
     <link rel="stylesheet" href="../css/global-style.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/style-color.css" />
+    <link rel="stylesheet" href="../css/final-score-style.css" />
     <title>Final Score</title>
   </head>
 
   <body>
-    <div class="contenedor">
-      <div class="info-score">
+    <main class="contenedor">
+      <section class="info-score">
         <h1 class="bree-serif-regular">Anotaste:</h1>
         <h2 class="noto-sans-jp-font ultima__puntuacion">10</h2>
 
         <div class="contenedor__header--button">
-          <a href="./ingame.html">
-            <button
-              class="bree-serif-regular myBtn"
-              aria-label="¡Juega de nuevo!"
-            ></button>
-          </a>
-
-          <br />
-
-          <a href="./leaderboard.html">
-            <button
-              class="bree-serif-regular myBtn"
-              aria-label="Tabla de clasificación"
-            ></button>
-          </a>
+            <a href="./ingame.html" class="bree-serif-regular myBtn" aria-label="¡Juega de nuevo!" role="button"></a>
+            <a href="./leaderboard.html" class="bree-serif-regular myBtn" aria-label="Tabla de clasificación" role="button"> </a>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="container">
         <div class="row justify-content-center">
@@ -72,7 +59,7 @@
           </div>
         </div>
         <div class="text-center mt-3 text-black">
-          <p class="noto-sans-jp-normal fs-5">
+          <p class="noto-sans-jp-normal fs-6">
             &copy; 2025 Guess The Event. All rights reserved.
           </p>
         </div>

@@ -50,3 +50,33 @@
     outline-color: #000;
   }
 }
+
+.icon-container .fab:hover,
+.icon-container .fas:hover {
+  color: white;
+}
+
+.icon-container .fa-paypal:hover {
+  background-color: #2790c3;
+}
+
+.icon-container .fa-stripe:hover {
+  background-color: #5167fc;
+}
+
+.icon-container .fa-coffee:hover {
+  background-color: #ffee00;
+  color: black;
+}
+
+.icon-container .fa-twitter:hover {
+  background-color: #0077b5;
+}
+
+.icon-container .fa-instagram:hover {
+  background-color: #c13584;
+}
+
+.icon-container .fa-facebook:hover {
+  background-color: #3b5998;
+}

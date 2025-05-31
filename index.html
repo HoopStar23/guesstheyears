@@ -19,17 +19,21 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/main-style.css" />
+    <link rel="stylesheet" href="./css/global-style.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style-color.css" />
-    <link rel="stylesheet" href="./css/global-style.css" />
+    <link rel="stylesheet" href="./css/main-style.css" />
     <title>Guess The Years</title>
   </head>
   <body>
     <div class="contenedor">
-      <div class="contenedor__header">
+      <header class="contenedor__header">
         <div>
-          <img src="./image/bg/GTE-Logo.png" class="logo" alt="Logo" />
+          <img
+            src="./image/bg/GTE-Logo.png"
+            class="logo"
+            alt="Guess The Event Logo"
+          />
         </div>
         <h1 class="bree-serif-regular titulo-estilo mainTextColor">
           Guess The Event
@@ -44,23 +48,24 @@
         </h3>
 
         <div class="contenedor__header--button">
-          <a href="./public/ingame.html">
-            <button
-              class="bree-serif-regular myBtn"
-              aria-label="Classic"
-            ></button>
+          <a
+            href="./public/ingame.html"
+            class="bree-serif-regular myBtn"
+            aria-label="Classic"
+            role="button"
+          >
           </a>
-
-          <a href="./public/leaderboard.html"
-            ><button
-              class="bree-serif-regular myBtn"
-              aria-label="Leaderboard"
-            ></button>
+          <a
+            href="./public/leaderboard.html"
+            class="bree-serif-regular myBtn"
+            aria-label="Leaderboard"
+            role="button"
+          >
           </a>
         </div>
-      </div>
+      </header>
     </div>
-   <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-6 text-center">
@@ -80,12 +85,14 @@
             </div>
           </div>
         </div>
-        <div class="text-center mt-3 text-black ">
-          <p class="noto-sans-jp-normal fs-5">&copy; 2025 Guess The Event. All rights reserved.</p>
+        <div class="text-center mt-3 text-black">
+          <p class="noto-sans-jp-normal fs-6">
+            &copy; 2025 Guess The Event. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
-    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
