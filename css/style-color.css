@@ -5,6 +5,12 @@
   --color-btn-donate: #325196;
   --color-btn-donate-hover: #2b3241;
   --color-card-background: #eaa400;
+  --color-paypal: #2790c3;
+  --color-stripe: #5167fc;
+  --color-coffee: #ffee00;
+  --color-twitter: #0077b5;
+  --color-instagram: #c13584;
+  --color-facebook: #3b5998;
 }
 
 .mainTextColor {
@@ -57,26 +63,30 @@
 }
 
 .icon-container .fa-paypal:hover {
-  background-color: #2790c3;
+  background-color: var(--color-paypal);
 }
 
 .icon-container .fa-stripe:hover {
-  background-color: #5167fc;
+  background-color: var(--color-stripe);
 }
 
 .icon-container .fa-coffee:hover {
-  background-color: #ffee00;
+  background-color: var(--color-coffee);
   color: black;
 }
 
 .icon-container .fa-twitter:hover {
-  background-color: #0077b5;
+  background-color: var(--color-twitter);
 }
 
 .icon-container .fa-instagram:hover {
-  background-color: #c13584;
+  background-color: var(--color-instagram);
 }
 
 .icon-container .fa-facebook:hover {
-  background-color: #3b5998;
+  background-color: var(--color-facebook);
+}
+
+.ultima__puntuacion {
+  background-color: var(--color-card-background);
 }
