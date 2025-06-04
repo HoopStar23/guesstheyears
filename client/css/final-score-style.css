@@ -34,6 +34,7 @@ body {
   font-weight: 700;
   margin: 1.5rem 0;
   color: var(--color-puntuacion);
+  background-color: var(--color-card-background);
 }
 
 .footer {
@@ -75,6 +76,69 @@ body {
 
 .info-score {
   text-align: center;
+}
+
+.myBtn {
+  color: #000;
+  background-color: var(--color-button-background);
+}
+
+.myBtn::after {
+  color: white;
+  background-color: var(--color-button-foreground);
+  border: 2px solid var(--color-button-background);
+}
+
+.myBtn:focus-visible {
+  outline-color: #000;
+}
+
+.myBtnSec {
+  transition: background-color 200ms ease-out, transform 200ms ease-out;
+}
+
+.myBtnSec:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+.myBtnSec:hover::after {
+  border: 2px solid var(--color-button-foreground);
+  color: #000;
+}
+
+.myBtnSec::after {
+  border: 2px solid rgba(43, 50, 65, 0.8);
+  color: var(--color-button-foreground);
+}
+
+.icon-container .fab:hover,
+.icon-container .fas:hover {
+  color: white;
+}
+
+.icon-container .fa-paypal:hover {
+  background-color: var(--color-paypal);
+}
+
+.icon-container .fa-stripe:hover {
+  background-color: var(--color-stripe);
+}
+
+.icon-container .fa-coffee:hover {
+  background-color: var(--color-coffee);
+  color: black;
+}
+
+.icon-container .fa-twitter:hover {
+  background-color: var(--color-twitter);
+}
+
+.icon-container .fa-instagram:hover {
+  background-color: var(--color-instagram);
+}
+
+.icon-container .fa-facebook:hover {
+  background-color: var(--color-facebook);
 }
 
 @media (max-width: 768px) {
