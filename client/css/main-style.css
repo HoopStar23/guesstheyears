@@ -7,6 +7,14 @@ body {
   height: 100vh;
 }
 
+.mainTextColor {
+  color: var(--color-text);
+}
+
+.basicTextStyle{
+  line-height: var(--global-line-height);
+}
+
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -17,26 +25,17 @@ body {
 .contenedor__header {
   text-align: center;
   padding: 1rem;
-  margin-bottom: 10rem;
-  width: 80%;
+  margin-bottom: var(--margin-xxl);
 }
 
 .contenedor__header--button {
-  padding-top: 100px;
+  padding-top: 60px;
   display: flex;
   justify-content: space-evenly;
 }
 
 .titulo-estilo {
-  font-size: 64px;
-}
-
-.footer {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
+  font-size: var(--font-xxxl);
 }
 
 .logo {
@@ -52,6 +51,22 @@ body {
 .social-icon {
   margin: 0 0.5rem;
   font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.icon-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .icon-container .fab,
@@ -73,6 +88,79 @@ body {
   color: white;
 }
 
+.myBtn {
+  color: #000;
+  background-color: var(--color-button-background);
+}
+
+.myBtn::after {
+  color: white;
+  background-color: var(--color-button-foreground);
+  border: 2px solid var(--color-button-background);
+}
+
+.myBtn:focus-visible {
+  outline-color: #000;
+}
+
+.myBtnSec {
+  transition: background-color 200ms ease-out, transform 200ms ease-out;
+}
+
+.myBtnSec:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+.myBtnSec:hover::after {
+  border: 2px solid var(--color-button-foreground);
+  color: #000;
+}
+
+.myBtnSec::after {
+  border: 2px solid rgba(43, 50, 65, 0.8);
+  color: var(--color-button-foreground);
+}
+
+.icon-container .fab:hover,
+.icon-container .fas:hover {
+  color: white;
+}
+
+.icon-container .fa-paypal:hover {
+  background-color: var(--color-paypal);
+}
+
+.icon-container .fa-stripe:hover {
+  background-color: var(--color-stripe);
+}
+
+.icon-container .fa-coffee:hover {
+  background-color: var(--color-coffee);
+  color: black;
+}
+
+.icon-container .fa-twitter:hover {
+  background-color: var(--color-twitter);
+}
+
+.icon-container .fa-instagram:hover {
+  background-color: var(--color-instagram);
+}
+
+.icon-container .fa-facebook:hover {
+  background-color: var(--color-facebook);
+}
+
+.ultima__puntuacion {
+  background-color: var(--color-card-background);
+}
+
+.sm-text {
+  color: var(--color-text);
+  line-height: var(--global-line-height);
+  margin-bottom: 16px;  
+}
+
 @media (max-width: 768px) {
   .footer {
     width: 100%;
@@ -84,12 +172,9 @@ body {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 660px) {
   .logo {
-    position: absolute;
-    height: 100px;
-    left: 0px;
-    top: 80px;
+    height: 150px;
   }
   .contenedor__header--button {
     width: 100%;
@@ -105,17 +190,24 @@ body {
   }
 
   .social-icon {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
   .icon-container .fab,
   .icon-container .fas {
-    line-height: 40px;
-    width: 40px;
-    height: 40px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
   }
 
-  .footer {
-    padding-bottom: 340px;
+  .container {
+      margin-top: 190px;
+  }
+
+  .titulo-estilo {
+  font-size: var(--font-xxl);
+  }
+  .basicTextStyle{
+    font-size: var(--font-l);
   }
 }

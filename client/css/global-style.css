@@ -1,3 +1,38 @@
+:root {
+  --color-text: #141414;
+  --color-button-foreground: #0049eb;
+  --color-button-background: #2b3241;
+  --color-btn-donate: #325196;
+  --color-btn-donate-hover: #2b3241;
+  --color-card-background: #eaa400;
+  --color-paypal: #2790c3;
+  --color-stripe: #5167fc;
+  --color-coffee: #ffee00;
+  --color-twitter: #0077b5;
+  --color-instagram: #c13584;
+  --color-facebook: #3b5998;
+
+  --margin-xxs: .25rem;
+  --margin-xs: .5rem;
+  --margin-s: .75rem;
+  --margin-m: 1rem;
+  --margin-l: 1.25rem;
+  --margin-xl: 1.75rem;
+  --margin-xxl: 2.5rem;
+
+  
+  --font-xxs: .25rem;
+  --font-xs: .5rem;
+  --font-s: .75rem;
+  --font-m: 1rem;
+  --font-l: 1.25rem;
+  --font-xl: 1.75rem;
+  --font-xxl: 2.5rem;
+  --font-xxxl: 5.5rem;
+
+  --global-line-height: 1.375em;
+}
+
 *,
 *::before,
 *::after {
@@ -14,10 +49,12 @@ button {
   isolation: isolate;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
+
+/*Primary Button Style*/
 .myBtn {
   --_y: -4px;
   line-height: 1.5;
@@ -27,25 +64,68 @@ a{
   justify-content: center;
   align-items: center;
   outline: 2px solid transparent;
-  outline-offset:  2px;
-  
-  &::after{
-    content: attr(aria-label);
-    font-size: 1.1rem;
-    padding: 12px 48px;
-    border-radius: inherit;
-    transform: translateY(var(--_y));
-    transition: 200ms ease-out;
-  }
+  outline-offset: 2px;
+}
 
-  &:hover{
-    --_y: -8px;
-  }
+.myBtn::after {
+  content: attr(aria-label);
+  font-size: 1.1rem;
+  padding: 12px 48px;
+  border-radius: inherit;
+  transform: translateY(var(--_y));
+  transition: 200ms ease-out;
+}
 
-  &:active{
-    --_y: 1px;
-    &::after{
-      transition: 50ms ease-out;
-    }
-  }
+.myBtn:hover {
+  --_y: -8px;
+}
+
+.myBtn:active {
+  --_y: .5px;
+}
+
+.myBtn:active::after {
+  transition: 50ms ease-out;
+}
+
+/*Secondary Button Style*/
+.myBtnSec {
+  border-radius: 5rem;
+  position: relative;
+  bottom: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.myBtnSec::after {
+  content: attr(aria-label);
+  font-size: var(--font-l);
+  padding: 12px 48px;
+  border-radius: inherit;
+}
+
+/*<weight>: Use a value from 100 to 900
+<uniquifier>: Use a unique and descriptive class name*/
+
+.noto-sans-jp-font {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.noto-sans-jp-normal {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.bree-serif-regular {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
 }
