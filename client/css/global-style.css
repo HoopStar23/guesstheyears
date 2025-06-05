@@ -1,10 +1,31 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
-  --color-text: #141414;
-  --color-button-foreground: #0049eb;
-  --color-button-background: #2b3241;
-  --color-btn-donate: #325196;
-  --color-btn-donate-hover: #2b3241;
-  --color-card-background: #eaa400;
+  /* colors */
+  --gray10: hsl(0, 0%, 10%);
+  --gray30: hsl(0, 0%, 30%);
+  --gray50: hsl(0, 0%, 50%);
+  --gray70: hsl(0, 0%, 70%);
+  --gray90: hsl(0, 0%, 90%);
+
+  --colora: hsl(221.4, 100%, 46.1%);
+  --colora-darker1: hsl(221.4, 100%, 16.1%);
+  --colora-lighter1: hsl(221.4, 100%, 56.1%);
+  --colora-lighter2: hsl(221.4, 100%, 66.1%);
+  --colora-lighter3: hsl(221.4, 100%, 76.1%);
+
+  --colorb: hsl(60, 91%, 93%);
+  --colorb-darker-1: hsl(60, 91%, 83%);
+  --colorb-darker-2: hsl(60, 91%, 73%);
+  --colorb-darker-3: hsl(60, 91%, 63%); 
+  --colorb-darker-4: hsl(60, 91%, 53%); 
+
   --color-paypal: #2790c3;
   --color-stripe: #5167fc;
   --color-coffee: #ffee00;
@@ -12,18 +33,33 @@
   --color-instagram: #c13584;
   --color-facebook: #3b5998;
 
-  --margin-xxs: .25rem;
-  --margin-xs: .5rem;
-  --margin-s: .75rem;
-  --margin-m: 1rem;
-  --margin-l: 1.25rem;
-  --margin-xl: 1.75rem;
-  --margin-xxl: 2.5rem;
+
 
   
-  --font-xxs: .25rem;
-  --font-xs: .5rem;
-  --font-s: .75rem;
+  --color-text: #141414;
+  --color-button-foreground: #0049eb;
+  --color-button-background: #2b3241;
+  --color-btn-donate: #325196;
+  --color-btn-donate-hover: #2b3241;
+  --color-card-background: #eaa400;
+
+
+
+
+
+  /*Spacing*/
+  --spacing0: 0.25rem; /*4px*/
+  --spacing1: 0.5rem; /*8px*/
+  --spacing2: 1rem; /*16px*/
+  --spacing3: 1.5rem; /*24px*/
+  --spacing4: 2.5rem; /*40px*/
+  --spacing5: 5rem; /*80px*/
+  --spacing6: 10rem; /*160px*/
+  --spacing7: 12.5rem; /*200px*/
+
+  --font-xxs: 0.25rem;
+  --font-xs: 0.5rem;
+  --font-s: 0.75rem;
   --font-m: 1rem;
   --font-l: 1.25rem;
   --font-xl: 1.75rem;
@@ -31,14 +67,32 @@
   --font-xxxl: 5.5rem;
 
   --global-line-height: 1.375em;
-}
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /* main page font styles*/
+  --ff: "Bree Serif", sans-serif;
+  --ff2: "Noto Sans JP", sans-serif;
+  --h1: bold 4rem/1em var(--ff);
+  --h2: bold 3rem/1.2em var(--ff2);
+  --h3: bold 2.25rem/1.2em var(--ff2);
+  --h4: bold 1.5rem/1.6em var(--ff2);
+  --big: bold 1.25rem/1.6em var(--ff2);
+  --p: bold 1rem/1.6em var(--ff2);
+  --small: 0.75rem/2em var(--ff2);
+
+  /* UIs font styles*/
+  --h1ui: bold 3rem/1.2em var(--ff);
+  --h2ui: bold 2.25rem/1.2em var(--ff);
+  --h3ui: bold 1.5rem/1.2em var(--ff);
+  --h4ui: bold 1.12rem/1.6em var(--ff);
+  --bigui: 1rem/1.6em var(--ff);
+  --pui: 0.8rem/1.6em var(--ff);
+  --smallui: 0.75rem/1.8em var(--ff);
+
+
+  /*Icons*/
+  --icon-size1: 2rem;
+  /*logo size*/
+  --logo-size1: 15rem;
 }
 
 button {
@@ -52,7 +106,6 @@ button {
 a {
   text-decoration: none;
 }
-
 
 /*Primary Button Style*/
 .myBtn {
@@ -69,8 +122,8 @@ a {
 
 .myBtn::after {
   content: attr(aria-label);
-  font-size: 1.1rem;
-  padding: 12px 48px;
+  font: var(--p);
+  padding: var(--spacing2) var(--spacing4);
   border-radius: inherit;
   transform: translateY(var(--_y));
   transition: 200ms ease-out;
@@ -81,7 +134,7 @@ a {
 }
 
 .myBtn:active {
-  --_y: .5px;
+  --_y: 0.5px;
 }
 
 .myBtn:active::after {
@@ -102,8 +155,8 @@ a {
 
 .myBtnSec::after {
   content: attr(aria-label);
-  font-size: var(--font-l);
-  padding: 12px 48px;
+  font: var(--p);
+  padding: var(--spacing2) var(--spacing4);
   border-radius: inherit;
 }
 

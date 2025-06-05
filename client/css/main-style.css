@@ -7,12 +7,25 @@ body {
   height: 100vh;
 }
 
-.mainTextColor {
-  color: var(--color-text);
+h1 {
+  font: var(--h1);
+  color: var(--gray10);
 }
 
-.basicTextStyle{
-  line-height: var(--global-line-height);
+h3 {
+  font: var(--h3);
+  color: var(--gray10);
+}
+
+h4 {
+  font: var(--h4);
+  color: var(--gray10);
+}
+
+p {
+  font: var(--p);
+  color: var(--gray10);
+  margin-top: var(--spacing4);
 }
 
 .contenedor {
@@ -24,33 +37,28 @@ body {
 
 .contenedor__header {
   text-align: center;
-  padding: 1rem;
-  margin-bottom: var(--margin-xxl);
+  padding: var(--spacing2);
 }
 
 .contenedor__header--button {
-  padding-top: 60px;
+  padding-top: var(--spacing5);
   display: flex;
   justify-content: space-evenly;
 }
 
-.titulo-estilo {
-  font-size: var(--font-xxxl);
-}
-
 .logo {
-  height: 250px;
+  height: var(--logo-size1);
   transform: translateY(-0px);
 }
 
 .donate-icon {
   margin: 0 0.5rem;
-  font-size: 2rem;
+  font-size: var(--icon-size1);
 }
 
 .social-icon {
   margin: 0 0.5rem;
-  font-size: 2rem;
+  font-size: var(--icon-size1);
 }
 
 .container {
@@ -58,10 +66,10 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 150px;
+  margin-top: var(--spacing7);
 }
 
-.icon-container{
+.icon-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -85,45 +93,48 @@ body {
 .icon-container .fab:hover,
 .icon-container .fas:hover {
   transform: translateY(-10%);
-  color: white;
+  color: var(--gray90);
 }
 
 .myBtn {
-  color: #000;
-  background-color: var(--color-button-background);
+  background-color: var(--colora-darker1);
 }
 
 .myBtn::after {
-  color: white;
-  background-color: var(--color-button-foreground);
-  border: 2px solid var(--color-button-background);
+  color: var(--gray90);
+  background-color: var(--colora);
+  border: 2px solid var(--colora-darker1);
 }
 
 .myBtn:focus-visible {
-  outline-color: #000;
+  outline-color: var(--gray10);
 }
 
 .myBtnSec {
   transition: background-color 200ms ease-out, transform 200ms ease-out;
 }
 
+.myBtnSec::after {
+  background-color: var(--colorb);
+  border: 2px solid var(--colora);
+  color: var(--colora);
+  transition: background-color 200ms ease-out, border-color 200ms ease-out,
+    color 200ms ease-out;
+}
+
 .myBtnSec:hover {
-  background-color: rgb(228, 228, 228);
+  background-color: var(--colorb);
 }
 
 .myBtnSec:hover::after {
-  border: 2px solid var(--color-button-foreground);
-  color: #000;
-}
-
-.myBtnSec::after {
-  border: 2px solid rgba(43, 50, 65, 0.8);
-  color: var(--color-button-foreground);
+  border: 2px solid var(--gray10);
+  color: var(--gray10);
+  background-color: var(--colorb-darker-1);
 }
 
 .icon-container .fab:hover,
 .icon-container .fas:hover {
-  color: white;
+  color: var(--gray90);
 }
 
 .icon-container .fa-paypal:hover {
@@ -136,7 +147,7 @@ body {
 
 .icon-container .fa-coffee:hover {
   background-color: var(--color-coffee);
-  color: black;
+  color: var(--gray10);
 }
 
 .icon-container .fa-twitter:hover {
@@ -149,27 +160,6 @@ body {
 
 .icon-container .fa-facebook:hover {
   background-color: var(--color-facebook);
-}
-
-.ultima__puntuacion {
-  background-color: var(--color-card-background);
-}
-
-.sm-text {
-  color: var(--color-text);
-  line-height: var(--global-line-height);
-  margin-bottom: 16px;  
-}
-
-@media (max-width: 768px) {
-  .footer {
-    width: 100%;
-    height: 30rem;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding-bottom: 440px;
-  }
 }
 
 @media (max-width: 660px) {
@@ -185,29 +175,22 @@ body {
     padding-bottom: 1rem;
   }
 
-  .donate-icon {
-    font-size: 1.4rem;
-  }
-
-  .social-icon {
-    font-size: 2rem;
-  }
-
-  .icon-container .fab,
-  .icon-container .fas {
-    line-height: 60px;
-    width: 60px;
-    height: 60px;
-  }
-
   .container {
-      margin-top: 190px;
+    margin-top: var(--spacing6);
   }
 
-  .titulo-estilo {
-  font-size: var(--font-xxl);
+  h1 {
+    font: var(--h2);
+    color: var(--gray10);
   }
-  .basicTextStyle{
-    font-size: var(--font-l);
+
+  h3 {
+    font: var(--h4);
+    color: var(--gray10);
+  }
+
+  h4 {
+    font: var(--big);
+    color: var(--gray10);
   }
 }
