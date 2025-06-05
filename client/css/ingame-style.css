@@ -5,11 +5,27 @@ body {
   background-position: center;
 }
 
+h1 {
+  font: var(--h1);
+  color: var(--gray10);
+}
+
+h4 {
+  font: var(--h4);
+  color: var(--gray10);
+}
+
+p {
+  font: var(--p);
+  color: var(--gray10);
+  text-align: center;
+}
+
 .contenedor {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
+  padding: var(--spacing4);
   align-items: center;
   height: 100vh;
 }
@@ -19,11 +35,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 4rem;
-  padding-bottom: 10rem;
-}
-
-.titulo-estilo {
-  font-size: var(--font-xxxl);
+  padding-bottom: var(--spacing6);
 }
 
 .eventos {
@@ -33,18 +45,9 @@ body {
   place-items: center;
 }
 
-.evento__titulo {
-  font-size: var(--font-m);
-  text-align: center;
-}
-
-.titulo__score {
-  font-size: var(--font-xl);
-}
-
 .scoreboard {
   position: absolute;
-  top: 80px;
+  top: 90px;
   right: 150px;
   padding: 1rem;
 }
@@ -61,6 +64,7 @@ body {
   transition: transform 0.5s ease, filter 0.2s ease;
   cursor: pointer;
   border: 0;
+  box-shadow: 0px 4px 4px #00000030, 0px 12px 12px #00000015;
 
   &:hover {
     transform: scale(1.1);
@@ -77,8 +81,8 @@ body {
   overflow: hidden;
   backface-visibility: hidden;
   border-radius: 1em;
-  background-color: hsl(60, 91%, 93%);
-  background-image: black;
+  background-color: var(--colorb);
+  background-image: var(--gray10);
   z-index: 1;
 }
 
@@ -94,7 +98,7 @@ body {
   aspect-ratio: 5.9/6.8;
   overflow: hidden;
   border-radius: 0.5em;
-  outline: solid 2px black;
+  outline: solid 2px var(--gray10);
 
   img {
     max-width: 100%;
@@ -106,10 +110,10 @@ body {
 .carta-texto {
   margin-top: 1em;
   position: relative;
-  padding: 0.5em 0.65em;
+  padding: var(--spacing0) var(--spacing2);
   border-radius: 0.5em;
-  outline: solid 1px black;
-  background-color: hsl(60, 21%, 93%);
+  outline: solid 1px var(--gray10);
+  background-color: var(--colorb-darker-1);
   height: 30%;
 }
 
@@ -125,28 +129,22 @@ body {
 
 @media (max-width: 1533px) {
   .scoreboard {
-    position: absolute;
     top: 140px;
-    right: 150px;
-    padding: 1rem;
   }
 
   .card {
     width: 280px;
   }
-
-  .evento__titulo {
-    font-size: 14px;
-  }
+  p {
+  font: var(--small);
+  color: var(--gray10);
+  text-align: center;
+}
 }
 
 @media (max-width: 1269px) {
   .card {
     width: 250px;
-  }
-
-  .evento__titulo {
-    font-size: 12px;
   }
 
   .scoreboard {
@@ -178,21 +176,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding-bottom: 50px;
+    padding-bottom: var(--spacing3);
   }
-
-  .titulo-estilo {
-    padding-top: 50px;
-    margin-bottom: 0px;
-    font-size: 64px;
-  }
-
-  .evento__titulo {
-    font-size: 10px;
-  }
-  
-  .titulo__score {
-  font-size: var(--font-l);
-}
-
 }
