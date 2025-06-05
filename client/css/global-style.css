@@ -23,8 +23,8 @@
   --colorb: hsl(60, 91%, 93%);
   --colorb-darker-1: hsl(60, 91%, 83%);
   --colorb-darker-2: hsl(60, 91%, 73%);
-  --colorb-darker-3: hsl(60, 91%, 63%); 
-  --colorb-darker-4: hsl(60, 91%, 53%); 
+  --colorb-darker-3: hsl(60, 91%, 63%);
+  --colorb-darker-4: hsl(60, 91%, 53%);
 
   --color-paypal: #2790c3;
   --color-stripe: #5167fc;
@@ -32,20 +32,6 @@
   --color-twitter: #0077b5;
   --color-instagram: #c13584;
   --color-facebook: #3b5998;
-
-
-
-  
-  --color-text: #141414;
-  --color-button-foreground: #0049eb;
-  --color-button-background: #2b3241;
-  --color-btn-donate: #325196;
-  --color-btn-donate-hover: #2b3241;
-  --color-card-background: #eaa400;
-
-
-
-
 
   /*Spacing*/
   --spacing0: 0.25rem; /*4px*/
@@ -56,17 +42,8 @@
   --spacing5: 5rem; /*80px*/
   --spacing6: 10rem; /*160px*/
   --spacing7: 12.5rem; /*200px*/
-
-  --font-xxs: 0.25rem;
-  --font-xs: 0.5rem;
-  --font-s: 0.75rem;
-  --font-m: 1rem;
-  --font-l: 1.25rem;
-  --font-xl: 1.75rem;
-  --font-xxl: 2.5rem;
-  --font-xxxl: 5.5rem;
-
-  --global-line-height: 1.375em;
+  --spacing8: 15.625rem;/*250px*/
+  --spacing8: 18.75rem;/*300px*/
 
   /* main page font styles*/
   --ff: "Bree Serif", sans-serif;
@@ -77,7 +54,7 @@
   --h4: bold 1.5rem/1.6em var(--ff2);
   --big: bold 1.25rem/1.6em var(--ff2);
   --p: bold 1rem/1.6em var(--ff2);
-  --small: 0.75rem/2em var(--ff2);
+  --small: bold 0.75rem/2em var(--ff2);
 
   /* UIs font styles*/
   --h1ui: bold 3rem/1.2em var(--ff);
@@ -87,7 +64,6 @@
   --bigui: 1rem/1.6em var(--ff);
   --pui: 0.8rem/1.6em var(--ff);
   --smallui: 0.75rem/1.8em var(--ff);
-
 
   /*Icons*/
   --icon-size1: 2rem;
